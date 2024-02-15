@@ -9,9 +9,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 class AppDimens {
   //screenutils
   static const appHeight =
-      200.0; //"Add your custom height of screen with mediaQuery";
+      712.0; //"Add your custom height of screen with mediaQuery";
   static const appWidth =
-      300.0; //"Add your custom width of screen with mediaQuery";
+      360.0; //"Add your custom width of screen with mediaQuery";
 
 //page padding
   static final mainPagePadding = const EdgeInsets.only(

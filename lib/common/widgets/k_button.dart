@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:travel_nepal/common/widgets/k_loading_indicator.dart';
 import '../../theme/app_theme.dart';
 import '../constant/app_dimens.dart';
@@ -23,8 +22,8 @@ class KButton extends StatelessWidget {
     this.backgroundColor,
     this.foregroundColor,
     this.bordered,
-    super.key,
-  });
+    Key? key,
+  }) : super(key: key);
 
   double getFontSizeBySize(ButtonSize size) {
     switch (size) {
@@ -55,26 +54,26 @@ class KButton extends StatelessWidget {
   double getProgressRadiusByButtonSize(ButtonSize size) {
     switch (size) {
       case ButtonSize.xSmall:
-        return 16.h;
+        return 16;
       case ButtonSize.small:
-        return 18.h;
+        return 18;
       case ButtonSize.medium:
-        return 20.h;
+        return 20;
       case ButtonSize.large:
-        return 22.h;
+        return 22;
     }
   }
 
   double getProgressWidthByButtonSize(ButtonSize size) {
     switch (size) {
       case ButtonSize.xSmall:
-        return 2.h;
+        return 2;
       case ButtonSize.small:
-        return 2.h;
+        return 2;
       case ButtonSize.medium:
-        return 3.h;
+        return 3;
       case ButtonSize.large:
-        return 3.h;
+        return 3;
     }
   }
 

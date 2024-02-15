@@ -73,7 +73,7 @@ abstract class AppThemes {
         )
         .copyWith(
           bodyMedium: ThemeData.light().textTheme.bodyMedium?.copyWith(
-                color: secondaryColor,
+                color: Colors.white,
                 fontSize: AppDimens.headlineFontSizeXXSmall,
                 fontFamily: fontFamily,
                 fontWeight: FontWeight.w300,

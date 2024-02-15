@@ -1,8 +1,7 @@
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class AppImage {
-  //add you images from asset file like below
-  // static const String logoName = 'assets/logo.png';
+  static const mountain = "asset/onboarding/mountain.png";
 
 //image height
   static final double llogoHeight = 130.h;
