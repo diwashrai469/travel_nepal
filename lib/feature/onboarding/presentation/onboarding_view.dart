@@ -37,6 +37,7 @@ class OnboardingView extends StatelessWidget {
                   style: appTextStyle(context)!.copyWith(
                       fontWeight: AppDimens.lfontweight,
                       letterSpacing: 0.1,
+                      color: Colors.white,
                       fontSize: AppDimens.headlineFontSizeMedium),
                 ),
                 mHeightSpan,
