@@ -1,5 +1,7 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
+import 'package:travel_nepal/common/constant/app_dimens.dart';
+import 'package:travel_nepal/common/widgets/k_textformfield.dart';
 
 @RoutePage()
 class DashboardView extends StatelessWidget {
@@ -7,12 +9,22 @@ class DashboardView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text(
-          "DASHBOARD",
-        ),
+    return Scaffold(
+        body: Padding(
+      padding: AppDimens.mainPagePadding,
+      child: Column(
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              KTextFormField(
+                hint: "Search destination",
+              ),
+              CircleAvatar()
+            ],
+          )
+        ],
       ),
-    );
+    ));
   }
 }
