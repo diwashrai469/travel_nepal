@@ -1,6 +1,7 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:travel_nepal/common/constant/app_dimens.dart';
+import 'package:travel_nepal/common/constant/ui_helpers.dart';
 import 'package:travel_nepal/common/widgets/k_textformfield.dart';
 
 @RoutePage()
@@ -9,22 +10,27 @@ class DashboardView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return SafeArea(
+      child: Scaffold(
         body: Padding(
-      padding: AppDimens.mainPagePadding,
-      child: Column(
-        children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          padding: AppDimens.mainPagePadding,
+          child: Column(
             children: [
-              KTextFormField(
-                hint: "Search destination",
-              ),
-              CircleAvatar()
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  KTextFormField(
+                    hint: "Search destination",
+                  ),
+                  CircleAvatar(),
+                  mHeightSpan,
+                  Chip(label: Text("this is a demo chip"))
+                ],
+              )
             ],
-          )
-        ],
+          ),
+        ),
       ),
-    ));
+    );
   }
 }
